@@ -58,7 +58,7 @@ public class RoomBuilder : MonoBehaviour
         sphere.transform.position = position;
         sphere.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
 
-        Material mat = new Material(Shader.Find("Standard"));
+        Material mat = new Material(Shader.Find("Universal Render Pipeline/Lit"));
         mat.color = color;
         sphere.GetComponent<Renderer>().material = mat;
     }
